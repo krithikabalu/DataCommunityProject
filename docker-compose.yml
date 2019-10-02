@@ -17,8 +17,3 @@ services:
 networks:
   my-network:
     driver: bridge
-
-#sh into the hadoop container and run:
-#sqoop import --connect jdbc:postgresql://postgres:5432/postgres?user=postgres --table product
-#Verify table creation:
-#/usr/local/hadoop/bin/hdfs dfs -ls product
