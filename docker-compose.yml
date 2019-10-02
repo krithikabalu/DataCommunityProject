@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  postgres:
+    build: postgres/
+    container_name: postgres
+    networks:
+      - my-network
+
+  hadoop:
+    build: hadoop/
+    container_name: hadoop
+    depends_on:
+      - postgres
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
+
+#sh into the hadoop container and run:
+#sqoop import --connect jdbc:postgresql://postgres:5432/postgres?user=postgres --table product
+#Verify table creation:
+#/usr/local/hadoop/bin/hdfs dfs -ls product

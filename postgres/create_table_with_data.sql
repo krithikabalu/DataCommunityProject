@@ -1,0 +1,4 @@
+CREATE TABLE product (id INTEGER PRIMARY KEY, price NUMERIC, name VARCHAR(10));
+INSERT INTO product VALUES (1001, 543, 'Oil');
+INSERT INTO product VALUES (1002, 150, 'Milk');
+INSERT INTO product VALUES (1003, 284, 'Pulses');
