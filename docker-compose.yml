@@ -2,18 +2,8 @@ version: '3.3'
 services:
   postgres:
     build: postgres/
-    container_name: postgres
-    networks:
-      - my-network
 
   hadoop:
     build: hadoop/
-    container_name: hadoop
     depends_on:
       - postgres
-    networks:
-      - my-network
-
-networks:
-  my-network:
-    driver: bridge
