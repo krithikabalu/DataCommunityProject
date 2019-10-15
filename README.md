@@ -10,4 +10,4 @@
 
 5. Insert new records into table
 
-6. Run `sh /import_data.sh <table_name> <column_name> <last_id_value>`. In our case, table name is 'product', column name is 'id', last id value is 1003
+6. Run `sh /append_data.sh <table_name> <column_name> <last_id_value>`. In our case, table name is 'product', column name is 'id', last id value is 1003
