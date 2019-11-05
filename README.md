@@ -1,4 +1,4 @@
-###### Steps to import data into hdfs from sqoop:
+#### Steps to import data into hdfs from sqoop:
 
 1. Make root of the project as your working directory
 
@@ -10,7 +10,7 @@
 
 5. Insert new records into table
 
-**Airflow**
+*Using Airflow*
 
 1. Activate python virtual env `source venv/bin/activate`
 
