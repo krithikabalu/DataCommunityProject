@@ -7,5 +7,13 @@ services:
     build: hadoop/
     ports:
       - "8080:8080"
+      - "8088:8088"
     depends_on:
       - postgres
+
+  elasticsearch:
+    image: sebp/elk
+    ports:
+      - "5601:5601"
+      - "9200:9200"
+      - "5044:5044"

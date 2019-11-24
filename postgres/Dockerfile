@@ -1,2 +1,2 @@
 FROM postgres:latest
-COPY *.sql /docker-entrypoint-initdb.d/
+COPY create_table_with_data.sql /docker-entrypoint-initdb.d/
