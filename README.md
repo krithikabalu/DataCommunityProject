@@ -53,9 +53,7 @@
 ```
 3. Run 'hive' and in the hive shell, execute the following statements sequentially:
 
-- `CREATE EXTERNAL TABLE product_hdfs (id int, price int,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/hive/data/product'`
-
-- `LOAD DATA INPATH 'product' INTO TABLE product_hdfs;`
+- `CREATE EXTERNAL TABLE product_hdfs (id int, price int,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/product'`
 
 - `CREATE EXTERNAL TABLE product_es (id bigint, price bigint, name string) STORED BY 'org.elasticsearch.hadoop.hive.EsStorageHandler' TBLPROPERTIES('es.resource' ='pricing/product','es.nodes'= 'elasticsearch’);`
 
